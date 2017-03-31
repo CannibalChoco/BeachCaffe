@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kafejnīca Liedags</string>
+    <string name="description1">Gardas maltītes un lieliski dzērieni. Omulīga atmosfēra un skaisti skati.</string>
+    <string name="description2">Dzīvā mūzika nedēļas nogalēs.</string>
+    <string name="address">Liedaga 3, Liepāja</string>
+    <string name="phone">371 1444980</string>
+    <string name="openHours">P - Sv 10:00 - 02:00</string>
+</resources>
