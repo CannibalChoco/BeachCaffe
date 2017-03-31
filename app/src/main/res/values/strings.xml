@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Caffe Liedags</string>
+    <string name="description1">Great meals and tasty drinks. Cozy setting and beautiful scenery.</string>
+    <string name="description2">Live music on weekend nights.</string>
+    <string name="web">www.caffeliedags.com</string>
+    <string name="address">Liedaga 3, Liepaja</string>
+    <string name="phone">371 1444980</string>
+    <string name="openHours">MON - SUN 10:00 - 02:00</string>
+</resources>
