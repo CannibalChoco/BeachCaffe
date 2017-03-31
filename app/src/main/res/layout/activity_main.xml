@@ -18,77 +18,84 @@
 
         <TextView
             android:id="@+id/name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/DescriptionTextStyle"
             android:layout_below="@id/sunset"
-            android:gravity="center"
             android:paddingBottom="8dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
             android:paddingTop="8dp"
             android:text="@string/app_name"
-            android:textColor="#212121"
             android:textSize="40sp" />
 
-        <TextView
-            style="@style/DescriptionTextStyle"
-            android:id="@+id/description1"
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
             android:layout_below="@id/name"
-            android:text="@string/description1" />
+            android:background="@color/TextColor" />
 
         <TextView
+            android:id="@+id/description1"
             style="@style/DescriptionTextStyle"
+            android:layout_below="@id/view"
+            android:text="@string/description1"
+            android:textSize="16sp" />
+
+        <TextView
             android:id="@+id/description2"
+            style="@style/DescriptionTextStyle"
             android:layout_below="@id/description1"
             android:paddingBottom="20dp"
-            android:text="@string/description2" />
-
+            android:text="@string/description2"
+            android:textSize="16sp" />
 
 
         <ImageView
             android:id="@+id/open_icon"
             style="@style/IconStyle"
+            android:layout_alignRight="@+id/phone_icon"
             android:layout_below="@id/description2"
-            android:src="@drawable/clock"
-            android:layout_alignRight="@+id/phone_icon" />
+            android:src="@drawable/clock" />
+
         <TextView
             android:id="@+id/openHours"
             style="@style/InfoTextViewStyle"
-            android:text="@string/openHours"
             android:layout_above="@+id/phone_icon"
-            android:layout_toRightOf="@+id/open_icon"/>
+            android:layout_toRightOf="@+id/open_icon"
+            android:text="@string/openHours" />
 
         <ImageView
             android:id="@+id/phone_icon"
             style="@style/IconStyle"
-            android:src="@drawable/ic_call_black_18dp"
+            android:layout_alignParentLeft="true"
             android:layout_below="@+id/open_icon"
-            android:layout_alignParentLeft="true"/>
+            android:src="@drawable/ic_call_black_18dp" />
 
         <TextView
             android:id="@+id/phone"
             style="@style/InfoTextViewStyle"
-            android:autoLink="phone"
-            android:text="@string/phone"
             android:layout_above="@+id/location_icon"
-            android:layout_toRightOf="@+id/phone_icon" />
+            android:layout_toRightOf="@+id/phone_icon"
+            android:autoLink="phone"
+            android:text="@string/phone" />
 
         <ImageView
             android:id="@+id/location_icon"
             style="@style/IconStyle"
-            android:src="@drawable/ic_location_on_black_18dp"
-            android:layout_below="@+id/phone_icon"
             android:layout_alignParentLeft="true"
-            android:paddingBottom="16dp"/>
+            android:layout_below="@+id/phone_icon"
+            android:paddingBottom="16dp"
+            android:src="@drawable/ic_location_on_black_18dp" />
 
         <TextView
             android:id="@+id/adress"
             style="@style/InfoTextViewStyle"
-            android:autoLink="map"
-            android:text="@string/address"
             android:layout_alignBottom="@+id/location_icon"
             android:layout_toRightOf="@+id/location_icon"
-            android:paddingBottom="16dp" />
+            android:autoLink="map"
+            android:paddingBottom="16dp"
+            android:text="@string/address" />
 
     </RelativeLayout>
 </ScrollView>
